@@ -1,0 +1,139 @@
+[
+    {
+        "id" : 1 ,
+        "name":"Mustard Oil",
+        "category":[
+            "Cooking Oil",
+            "Hair Oil",
+            "Organic Oil"
+        ],
+        "image":"Pure Kachi Ghani Mustard oil bottle by Hafeez Oil and Products.png",
+        "variants": [
+            { "size":"500ml"  , "liter":0.5 , "price":350},
+            { "size":"1L" , "liter":1 , "price":650},
+            { "size":"2L" , "liter":2 , "price":1200},
+            { "size":"5L"   , "liter":5 , "price":3000},
+            { "size":"15L"  , "liter":15 , "price":9000 },
+            { "size":"25L"  , "liter":25 , "price":15000 },
+            { "size":"30L"  , "liter":30 , "price":18000 },
+            { "size":"100L" , "liter":100, "price":60000 }
+           
+        ]
+    },
+
+    {
+        "id":2,
+        "name":"Almond Oil",
+        "category":[
+            "Skin Care",
+            "Hair Oil",
+            "Organic Oil",
+            "Massage Oil"
+        ],
+        "image":"Almond Oil.jpg",
+        "variants":[
+            {"size":"500ml" , "liter":0.5 , "price":750},
+            {"size":"1L" , "liter":1 , "price":1500},
+            {"size":"2L" , "liter":2 , "price":2800},
+            {"size":"5L" , "liter":5 , "price":6500},
+            {"size":"15L" , "liter":15 , "price":18000},
+            {"size":"25L" , "liter":25 , "price":28000},
+            {"size":"30L" , "liter":30 , "price":33000},
+            {"size":"100L" , "liter":100 , "price":110000}
+        ]
+    } ,
+    {
+        "id":3,
+        "name":"Sesame Oil",
+        "category":[
+            "Cooking Oil",
+            "Organic Oil",
+            "Massage Oil"
+        ],
+        "image":"Pure Kachi Ghani sesame oil (til ka tel) bottle by Hafeez Oil and Products.png",
+        "variants":[
+            {"size":"500ml" , "liter":0.5 , "price":600},
+            {"size":"1L" , "liter":1 , "price":1200},
+            {"size":"2L" , "liter":2 , "price":2300},
+            {"size":"5L" , "liter":5 , "price":5500},
+            {"size":"15L" , "liter":15 , "price":16000},
+            {"size":"25L" , "liter":25 , "price":26000},
+            {"size":"30L" , "liter":30 , "price":31000},
+            {"size":"100L" , "liter":100 , "price":100000}
+        ]
+    } ,
+    {
+        "id":4,
+        "name":"Olive Oil",
+        "category":[
+            "Organic Oil",
+            "Cooking Oil",
+            "Edible Oil"
+        ],
+        "image":"Olive Oil.jpg",
+        "variants":[
+            {"size":"500ml" , "liter":0.5 , "price":900},
+            {"size":"1L" , "liter":1 , "price":1700},
+            {"size":"2L" , "liter":2 , "price":3200},
+            {"size":"5L" , "liter":5 , "price":7500}
+        ]
+    } ,
+    {
+        "id":5,
+        "name":"Arugula Oil",
+        "category":[
+            "TaraMira Oil",
+            "Organic Oil",
+            "Oil For Itching",
+            "Hair Oil",
+            "Edible Oil"
+        ],
+        "image":"Pure Kachi Ghani Taramira oil (Jamba  Tara Mera oil) bottle by Hafeez Oil and Products.png",
+        "variants":[
+            {"size":"500ml" , "liter":0.5 , "price":500},
+            {"size":"1L" , "liter":1 , "price":1000},
+            {"size":"2L" , "liter":2 , "price":1800},
+            {"size":"5L" , "liter":5 , "price":4500},
+            {"size":"15L" , "liter":15 , "price":13000},
+            {"size":"25L" , "liter":25 , "price":21000},
+            {"size":"30L" , "liter":30 , "price":25000},
+            {"size":"100L" , "liter":100 , "price":80000}
+        ]
+    } ,
+    {
+        "id":6,
+        "name":"Coconut Oil",
+        "category":[
+            "Skin Care",
+            "Hair Oil",
+            "Organic Oil",
+            "Massage Oil"
+        ],
+        "image":"Pure Kachi Ghani coconut oil bottle by Hafeez Oil and Products (2).png",
+        "variants":[
+            {"size":"500ml" , "liter":0.5 , "price":50},
+            {"size":"1L" , "liter":1 , "price":1500},
+            {"size":"2L" , "liter":2 , "price":2800},
+            {"size":"5L" , "liter":5 , "price":6500},
+            {"size":"15L" , "liter":15 , "price":18000},
+            {"size":"25L" , "liter":25 , "price":28000},
+            {"size":"30L" , "liter":30 , "price":33000},
+            {"size":"100L" , "liter":100 , "price":110000}
+        ]
+    } ,
+    {
+        "id":7,
+        "name": "RedBUll",
+        "category": [
+            "Soft Drink"
+        ],
+        "image": "RedBull.jpg",
+        "variants": [
+            {"size":"250ml" , "ml":250 , "price":100},
+            {"size":"500ml" , "ml":500 , "price":200},
+            {"size":"1L" , "ml":1000 , "price":400},
+            {"size":"2L" , "ml":2000 , "price":800}
+        ]
+    }
+       
+]

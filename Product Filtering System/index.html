@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Filtering System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Product Filtering System</h1>
+
+    <div id="filter">
+        <search>
+            <input type="search" id="searchInput" placeholder="Search products">
+        </search>
+
+        <h4>Category:</h4>
+        <div class="custom-select" id="categoryFilterWrapper">
+            <button type="button" class="custom-select-trigger" id="categoryFilterTrigger">All Categories</button>
+            <div class="custom-select-options" id="categoryFilterOptions"></div>
+        </div>
+
+        <h4>Sort By Price :</h4>
+        <div class="custom-select" id="sortFilterWrapper">
+            <button type="button" class="custom-select-trigger" id="sortFilterTrigger">Default</button>
+            <div class="custom-select-options" id="sortFilterOptions">
+                <div class="custom-select-option" data-value="none">Default</div>
+                <div class="custom-select-option" data-value="lowToHigh">Price: Low to High</div>
+                <div class="custom-select-option" data-value="highToLow">Price: High to Low</div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div id="main">
+        <p id="resultsCount"></p>
+        <div id="productGrid"></div>
+    </div>
+</main>
+
+<footer id="footer">&copy; Oil Shop</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
