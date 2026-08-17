@@ -1,6 +1,6 @@
 import { getEmployees, setEmployees, addEmployee, updateEmployee, deleteEmployee, loadFromStorage } from "./state.js";
-import { renderEmployees, renderDepartmentOptions } from "./ui.js";
-import { generateId, isValidEmail, isValidName, isDuplicateEmail, filterByName, filterByDepartment } from "./utils.js";
+import { renderEmployees, renderDepartmentOptions, renderStats } from "./ui.js";
+import { generateId, isValidEmail, isValidName, isDuplicateEmail, filterByName, filterByDepartment, getDashboardStats } from "./utils.js";
 
 const testEmployees = [
     { id: generateId(), name: "Malik Ali", email: "ali@company.com", department: "Engineering", position: "Frontend Developer" },
@@ -27,13 +27,13 @@ const positionInput = document.getElementById("positionInput");
 const searchInput = document.getElementById("searchInput");
 const departmentFilter = document.getElementById("departmentFilter");
 
-// tracks whether we're adding a new employee or editing an existing one
 let editingId = null;
 
 /* ---------- MAIN RENDER PIPELINE ---------- */
 
 function refreshAll() {
     renderDepartmentOptions(getEmployees());
+    renderStats(getDashboardStats(getEmployees()));
     applyFilters();
 }
 

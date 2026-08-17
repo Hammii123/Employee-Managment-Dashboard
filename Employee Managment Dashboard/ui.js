@@ -45,7 +45,6 @@ export function renderEmployees(employeeList) {
 export function renderDepartmentOptions(employeeList) {
     const departmentFilter = document.getElementById("departmentFilter");
 
-    // pull out unique department names from the current employee list
     const departments = [];
     employeeList.forEach((emp) => {
         if (emp.department && !departments.includes(emp.department)) {
@@ -60,5 +59,22 @@ export function renderDepartmentOptions(employeeList) {
         option.value = dept;
         option.textContent = dept;
         departmentFilter.appendChild(option);
+    });
+}
+
+export function renderStats(stats) {
+    const statsSection = document.getElementById("statsSection");
+    statsSection.innerHTML = "";
+
+    const totalCard = document.createElement("div");
+    totalCard.className = "stat-card";
+    totalCard.innerHTML = `<h3>Total Employees</h3><p>${stats.totalEmployees}</p>`;
+    statsSection.appendChild(totalCard);
+
+    Object.keys(stats.departmentCounts).forEach((dept) => {
+        const card = document.createElement("div");
+        card.className = "stat-card";
+        card.innerHTML = `<h3>${dept}</h3><p>${stats.departmentCounts[dept]}</p>`;
+        statsSection.appendChild(card);
     });
 }
