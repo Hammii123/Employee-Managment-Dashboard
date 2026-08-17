@@ -1,0 +1,229 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+    padding: 20px;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    color: #1a1a2e;
+}
+
+/* ================= STATS ================= */
+
+#statsSection {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.stat-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 16px 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    min-width: 160px;
+    flex: 1;
+}
+
+.stat-card h3 {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: #888;
+    margin-bottom: 6px;
+}
+
+.stat-card p {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #1a1a2e;
+}
+
+/* ================= CONTROLS ================= */
+
+#controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#controls input,
+#controls select {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.9rem;
+}
+
+#addEmployeeBtn {
+    padding: 8px 16px;
+    background-color: #1a1a2e;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-left: auto;
+}
+
+#addEmployeeBtn:hover {
+    background-color: #33335a;
+}
+
+/* ================= TABLE ================= */
+
+#tableSection {
+    background: #fff;
+    border-radius: 8px;
+    overflow-x: auto;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #1a1a2e;
+    color: #fff;
+}
+
+th, td {
+    text-align: left;
+    padding: 12px 16px;
+    font-size: 0.9rem;
+}
+
+tbody tr {
+    border-bottom: 1px solid #eee;
+}
+
+tbody tr:hover {
+    background-color: #f9f9fb;
+}
+
+.btn-edit,
+.btn-delete {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    margin-right: 6px;
+}
+
+.btn-edit {
+    background-color: #f4a261;
+    color: #fff;
+}
+
+.btn-delete {
+    background-color: #e63946;
+    color: #fff;
+}
+
+/* ================= MODAL ================= */
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.modal.hidden {
+    display: none;
+}
+
+.modal-content {
+    background: #fff;
+    border-radius: 8px;
+    padding: 24px;
+    width: 90%;
+    max-width: 420px;
+}
+
+.modal-content h2 {
+    margin-bottom: 16px;
+    color: #1a1a2e;
+}
+
+#employeeForm label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+    margin-top: 12px;
+}
+
+#employeeForm input {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.9rem;
+}
+
+.modal-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.modal-actions button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+#saveEmployeeBtn {
+    background-color: #1a1a2e;
+    color: #fff;
+}
+
+#cancelModalBtn {
+    background-color: #eee;
+    color: #333;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 600px) {
+    #controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #addEmployeeBtn {
+        margin-left: 0;
+    }
+
+    th, td {
+        padding: 8px 10px;
+        font-size: 0.8rem;
+    }
+}

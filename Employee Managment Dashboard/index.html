@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Employee Managment Dashboard</title>
+</head>
+<body>
+
+<header>
+
+    <h1>Employee Managment Dashboard</h1>
+   
+</header>
+
+<section id="statsSection">
+         <!-- <----dashboard stats card will render here---> 
+</section>
+
+<section id="controls">
+    <input type="search" id="searchInput" placeholder="Search by name">
+
+    <select id="departmentFilter">
+        <option value="all">All Department</option>
+    </select>
+
+    <button id="addEmployeeBtn">+ AddEmployee</button>
+</section>
+
+<section id="tableSEction">
+    <table id="employeeTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Department</th>
+                <th>Position</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="employeeTableBody">
+            <!--enployee rows will render here-->
+        </tbody>
+    </table>
+</section>
+
+
+<!--Add/Edit Empolyee  Modal Form-->
+<div id="employeeModal" class="modal hidden">
+    <div class="modal-content">
+        <h2 id="modalTitle">Add Employee</h2>
+
+        <form id="employeeForm">
+            <label for="nameInput">Name</label>
+            <input type="text" id="nameInput" required>
+
+            <label for="emailInput">Email</label>
+            <input type="email" id="emailInput" required>
+
+            <label for="departmentInput">Department</label>
+            <input type="text" id="departmentInput" required>
+
+            <label for="positionInput">Position</label>
+            <input type="text" id="positionInput">
+
+            <div class="modal-actions">
+                <button type="submit" id="saveEmployeeBtn">Save</button>
+                <button type="button" id="cancelModalBtn">Cancel</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+    <script  type="module" src="app.js"></script>
+    
+</body>
+</html>
