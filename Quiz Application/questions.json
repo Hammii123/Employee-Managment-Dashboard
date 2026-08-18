@@ -1,0 +1,18 @@
+[
+    {
+        "id":1,
+        "question": "What is the capital of Pakistan?",
+        "answerss": [
+            "Lahore", "karachi" , "Islamabad" , "Peshawar"
+        ],
+        "correctAnswer" : "Islamabad"
+    } ,
+    {
+        "id":2,
+        "question": "which language is used to style web pages?",
+        "answers": [
+            "HTML", "javaScript" , "css" , "python"
+        ] , 
+        "correctAnswer":"CSS"
+    }
+]
