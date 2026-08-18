@@ -1,0 +1,248 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #dfe8f1;
+    color: #222;
+    padding: 20px;
+    line-height: 1.5;
+
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container {
+    max-width: 650px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: #1a1a2e;
+    margin-bottom: 24px;
+    font-size: 2rem;
+    letter-spacing: -0.5px;
+}
+
+h2 {
+    color: #4a4e69;
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 18px;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 10px rgba(17, 28, 78, 0.08);
+    transition: box-shadow 0.2s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 16px rgba(17, 28, 78, 0.12);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.row:last-child {
+    margin-bottom: 0;
+}
+
+input, select {
+    flex: 1;
+    min-width: 150px;
+    padding: 10px 12px;
+    border: 1px solid #cfd6e0;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: #fafbfc;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #111c4e;
+    box-shadow: 0 0 0 3px rgba(17, 28, 78, 0.12);
+    background-color: #fff;
+}
+
+button {
+    padding: 9px 16px;
+    background-color: #111c4e;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+button:hover {
+    background-color: #3348c4;
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+#clearAll {
+    background-color: #d6336c;
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    margin-top: 4px;
+}
+
+#clearAll:hover {
+    background-color: #c43a61;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-weight: 600;
+}
+
+.stats p {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 0.85rem;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.stats span {
+    font-size: 1.6rem;
+    color: #111c4e;
+    font-weight: 700;
+}
+
+ul#list {
+    list-style: none;
+}
+
+ul#list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 12px 4px;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.15s ease;
+}
+
+ul#list li:hover {
+    background-color: #fafbfd;
+}
+
+ul#list li:last-child {
+    border-bottom: none;
+}
+
+ul#list:empty::after {
+    content: "No tasks yet — add one above.";
+    display: block;
+    text-align: center;
+    color: #aaa;
+    font-size: 0.9rem;
+    padding: 20px 0;
+}
+
+.task-text {
+    flex: 1;
+    min-width: 0;
+    overflow-wrap: break-word;
+}
+
+.completed .task-text {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.task-user {
+    font-size: 0.75rem;
+    color: #4a4e69;
+    background: #eef0f5;
+    padding: 3px 10px;
+    border-radius: 10px;
+    white-space: nowrap;
+    font-weight: 600;
+}
+
+.task-date {
+    font-size: 0.7rem;
+    color: #aaa;
+    white-space: nowrap;
+}
+
+.task-actions {
+    display: flex;
+    gap: 6px;
+}
+
+.task-actions button {
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    border-radius: 5px;
+}
+
+.btn-complete {
+    background-color: #2a9d8f;
+}
+
+.btn-complete:hover {
+    background-color: #21766c;
+}
+
+.btn-delete {
+    background-color: #e63946;
+}
+
+.btn-delete:hover {
+    background-color: #b8232f;
+}
+
+.btn-edit {
+    background-color: #f4a261;
+}
+
+.btn-edit:hover {
+    background-color: #d6873f;
+}
+
+@media (max-width: 480px) {
+    .row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    ul#list li {
+        flex-wrap: wrap;
+    }
+
+    .task-actions {
+        width: 100%;
+        justify-content: flex-end;
+    }
+}

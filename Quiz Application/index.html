@@ -3,13 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
+    <div id="heading">
     <h1>Quiz App</h1>
-
+</div>
 <div id="quiz">
-    <div id="progress"></div>
+    <div class="progress-container">
+        <div class="progress-info" id="progress"></div>
+
+        <div class="progress-bar">
+            <div class="progress-fill" id="progrss-fill"></div>
+        </div>
+    </div>
 
     <div id="question"></div>
 
@@ -21,8 +29,10 @@
 <div id="result">
     <h2>Quiz Complete!</h2>
     <p id="score"></p>
-
+    <p id="result-message"></p>
     <button id="restart">Restart</button>
-</div>
+
+  </div>
+  <script src="script.js"></script>
 </body>
-</html>
+</html>>

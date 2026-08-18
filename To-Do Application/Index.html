@@ -1,0 +1,67 @@
+<head>   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TO-DoApplication</title>
+</head>
+
+<body>
+<div class="container">
+  <h1>JavaScript To-Do Application</h1>
+
+    <section class="card">
+     <h2>Users</h2> 
+      <div class="row">
+       <input id="userName" placeholder="New User Name">
+       <button id="addUser">Add User</button>
+      </div>
+     <div class="row">
+         <label for="userSelect">Current User:</label>
+         <select  id="userSelect">
+             <option value="">--Select a user--</option>
+         </select>        
+         <button id="editUser">Edit User</button>
+     </div>
+    </section>
+
+ <!-- Adding Task Section -->
+          <section class="card">
+              <h2>Add Task</h2>
+              <div class="row">
+                  <input id="task" placeholder="New Task">
+                  <button id="addTask">Add Task</button>
+              </div>
+          </section>
+
+
+             <section class="card status">
+                <h2>Total Tasks</h2>
+                 <p>Total: <span id="totalCount">0</span></p>
+                 <p>Completed: <span id="completedCount">0</span></p>
+                 <p>Pending: <span id="pendingCount">0</span></p>
+              
+              </section>
+             
+                     <section class="card">
+                         <div class="row">
+                             <label for="filterSelect">Filter: </label>
+                             <select  id="filterSelect">
+                                  <option value="all">All Task</option>
+                                  <option value="pending">Pending </option>
+                                  <option value="completed">Completed</option>
+                             </select>
+                         </div>
+                     </section>
+                     
+            <section class="card">
+                <ul id="list"></ul>
+            </section>
+         
+         <button id="clearAll">Clear All Tasks</button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+
+</html>

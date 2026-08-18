@@ -2,7 +2,7 @@
     {
         "id":1,
         "question": "What is the capital of Pakistan?",
-        "answerss": [
+        "answer": [
             "Lahore", "karachi" , "Islamabad" , "Peshawar"
         ],
         "correctAnswer" : "Islamabad"
@@ -10,9 +10,97 @@
     {
         "id":2,
         "question": "which language is used to style web pages?",
-        "answers": [
+        "answer": [
             "HTML", "javaScript" , "css" , "python"
         ] , 
-        "correctAnswer":"CSS"
-    }
+        "correctAnswer":"css"
+    },
+    {
+    "id": 3,
+    "question": "Which language is used to add interactivity to web pages?",
+    "answer": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Python"
+    ],
+    "correctAnswer": "JavaScript"
+},
+{
+    "id": 4,
+    "question": "Which HTML tag is used to create a hyperlink?",
+    "answer": [
+        "<link>",
+        "<a>",
+        "<href>",
+        "<url>"
+    ],
+    "correctAnswer": "<a>"
+},
+{
+    "id": 5,
+    "question": "Which CSS property is used to change the text color?",
+    "answer": [
+        "background-color",
+        "font-style",
+        "color",
+        "text-color"
+    ],
+    "correctAnswer": "color"
+},
+{
+    "id": 6,
+    "question": "Which keyword is used to declare a variable in JavaScript?",
+    "answer": [
+        "variable",
+        "let",
+        "define",
+        "varName"
+    ],
+    "correctAnswer": "let"
+},
+{
+    "id": 7,
+    "question": "Which method is used to add an element to the end of an array in JavaScript?",
+    "answer": [
+        "pop()",
+        "shift()",
+        "push()",
+        "add()"
+    ],
+    "correctAnswer": "push()"
+},
+{
+    "id": 8,
+    "question": "Which symbol is used for a single-line comment in JavaScript?",
+    "answer": [
+        "//",
+        "/* */",
+        "#",
+        "<!-- -->"
+    ],
+    "correctAnswer": "//"
+},
+{
+    "id": 9,
+    "question": "Which CSS layout system is commonly used for creating two-dimensional layouts?",
+    "answer": [
+        "Flexbox",
+        "Grid",
+        "Float",
+        "Position"
+    ],
+    "correctAnswer": "Grid"
+},
+{
+    "id": 10,
+    "question": "Which JavaScript method converts a JSON string into a JavaScript object?",
+    "answer": [
+        "JSON.stringify()",
+        "JSON.parse()",
+        "JSON.convert()",
+        "JSON.object()"
+    ],
+    "correctAnswer": "JSON.parse()"
+}
 ]
